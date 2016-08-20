@@ -40,9 +40,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CFProtocol\CFAccountRequest.cs" />
+    <Compile Include="CFProtocol\CFAccountResponse.cs" />
+    <Compile Include="CFProtocol\CFBroadCast.cs" />
+    <Compile Include="CFProtocol\CFChat.cs" />
+    <Compile Include="CFProtocol\CFInitializeRequest.cs" />
+    <Compile Include="CFProtocol\CFInitializeResponse.cs" />
+    <Compile Include="CFProtocol\CFRoomRequest.cs" />
+    <Compile Include="CFProtocol\CFRoomResponse.cs" />
+    <Compile Include="FBProtocol\FBAccountRequest.cs" />
+    <Compile Include="FBProtocol\FBAccountResponse.cs" />
+    <Compile Include="FBProtocol\FBConnectionPassRequest.cs" />
+    <Compile Include="FBProtocol\FBConnectionPassResponse.cs" />
+    <Compile Include="FBProtocol\FBInitializeRequest.cs" />
+    <Compile Include="FBProtocol\FBInitializeResponse.cs" />
+    <Compile Include="FBProtocol\FBRoomRequest.cs" />
+    <Compile Include="FBProtocol\FBRoomResponse.cs" />
     <Compile Include="HhhHelper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
