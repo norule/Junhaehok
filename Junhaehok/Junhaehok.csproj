@@ -50,6 +50,8 @@
     <Compile Include="CFProtocol\CFRoomResponse.cs" />
     <Compile Include="FBProtocol\FBAccountRequest.cs" />
     <Compile Include="FBProtocol\FBAccountResponse.cs" />
+    <Compile Include="FBProtocol\FBAdvertiseRequest.cs" />
+    <Compile Include="FBProtocol\FBAdvertiseResponse.cs" />
     <Compile Include="FBProtocol\FBConnectionPassRequest.cs" />
     <Compile Include="FBProtocol\FBConnectionPassResponse.cs" />
     <Compile Include="FBProtocol\FBInitializeRequest.cs" />

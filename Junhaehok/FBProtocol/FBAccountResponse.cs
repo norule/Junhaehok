@@ -9,7 +9,7 @@ namespace Junhaehok
 {
     public struct FBSignupResponse
     {
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 256)]
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 64)]
         public char[] cookie;
     }
     public struct FBDeleteUserResponse
@@ -29,7 +29,7 @@ namespace Junhaehok
         public char[] ip;
         public int port;
 
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 256)]
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 64)]
         public char[] cookie;
     }
 

@@ -9,7 +9,7 @@ namespace Junhaehok
 {
     public struct CFInitializeRequest
     {
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 256)]
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 64)]
         public char[] cookie;
     }
 }

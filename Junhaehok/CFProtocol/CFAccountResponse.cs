@@ -9,7 +9,7 @@ namespace Junhaehok
 {
     public struct CFSignupResponse
     {
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 256)]
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 64)]
         public char[] cookie;
     }
     public struct CFDeleteUserResponse
@@ -28,9 +28,8 @@ namespace Junhaehok
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 15)]
         public char[] ip;
         public int port;
-        public ushort socketType; 
 
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 256)]
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 64)]
         public char[] cookie;
     }
 

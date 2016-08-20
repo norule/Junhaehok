@@ -9,7 +9,7 @@ namespace Junhaehok
 {
     public struct FBInitializeRequest
     {
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 256)]
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 64)]
         public char[] cookie;
     }
 }

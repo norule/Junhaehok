@@ -8,21 +8,20 @@ using static System.BitConverter;
 
 namespace Junhaehok
 {
+    public struct Header
+    {
+        public long uid;
+        public ushort code;
+        public ushort size;
+        public Header(ushort code, ushort size, long uid = 0)
+        {
+            this.uid = uid;
+            this.code = code;
+            this.size = size;
+        }
+    }
     public struct Packet
     {
-        public struct Header
-        {
-            public long uid;
-            public ushort code;
-            public ushort size;
-            public Header(ushort code, ushort size, long uid = 0)
-            {
-                this.uid = uid;
-                this.code = code;
-                this.size = size;
-            }
-        }
-
         public Header header;
         public byte[] data;
 
@@ -140,6 +139,10 @@ namespace Junhaehok
             public const ushort HEARTBEAT = 1000;
             public const ushort HEARTBEAT_SUCCESS = 1002;
             public const ushort HEARTBEAT_FAIL = 1005;
+
+            public const ushort ADVERTISE = 1100;
+            public const ushort ADVERTISE_SUCCESS = 1102;
+            public const ushort ADVERTISE_FAIL = 1105;
         }
         public static string PacketDebug(Packet p)
         {
