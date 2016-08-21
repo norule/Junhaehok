@@ -9,4 +9,8 @@ namespace Junhaehok
     public struct AAServerInfoRequest
     {
     }
+    public struct AADeleteUserRequest
+    {
+        public string ID;
+    }
 }
