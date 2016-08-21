@@ -24,7 +24,11 @@ namespace Junhaehok
 
     public struct FBRoomLeaveRequest
     {
-        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 64)]
-        public char[] cookie;
+        public int roomNum;
+    }
+
+    public struct FBRoomDestroyRequest
+    {
+        public int roomNum;
     }
 }

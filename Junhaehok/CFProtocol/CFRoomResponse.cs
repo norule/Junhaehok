@@ -29,5 +29,7 @@ namespace Junhaehok
         [MarshalAs(UnmanagedType.ByValArray, SizeConst = 15)]
         public char[] ip;
         public int port;
+        [MarshalAs(UnmanagedType.ByValArray, SizeConst = 64)]
+        public char[] cookie;
     }
 }

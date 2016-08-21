@@ -40,6 +40,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AAProtocol\AAServerInfoRequest.cs" />
+    <Compile Include="AAProtocol\AAServerInfoResponse.cs" />
     <Compile Include="CFProtocol\CFAccountRequest.cs" />
     <Compile Include="CFProtocol\CFAccountResponse.cs" />
     <Compile Include="CFProtocol\CFBroadCast.cs" />
